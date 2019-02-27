@@ -136,6 +136,10 @@ body{
 	position: relative;
 }
 
+.content img{
+	filter: brightness(50%);
+}
+
 .center-text{
 	position: absolute;
 	top: 29%;
@@ -144,7 +148,7 @@ body{
     margin: auto;
 }
 .txt-color{
-	color: maroon;
+	color: #FFF;
 	text-align: center;
 }
 
