@@ -1,0 +1,25 @@
+body{
+	margin: 0;
+	background-image: url("image1.jpg");
+	background-size: cover;
+
+}
+.container{
+	margin: 14px;
+}
+
+.profile{
+	overflow: auto;
+}
+
+.profile img{
+	float: left;
+}
+
+#para1{
+	margin-left: 168px;	
+}
+
+table{
+	margin-left: 10px;
+}

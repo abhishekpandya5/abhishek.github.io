@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ques4 | Table with rowspan</title>
+	<style>
+		th{
+			background-color: yellow;	
+		}
+	</style>
+</head>
+<body>
+	<table width="600px" height="200px" border="5px" cellpadding="10px" cellspacing="0" align="center">
+					<caption><strong>Race Results</strong></caption>
+					<tr>
+						<th colspan="2">Runner</th>
+						<th>Time</th>
+						<th>Origin</th>
+					</tr>
+					<tr>
+						<td rowspan="2" bgcolor="lightblue">Men</td>
+						<td>1. Abhishek</td>
+						<td align="right">2:12:32</td>
+						<td>Delhi</td>
+					</tr>
+					<tr>
+						<td>2. Ronit</td>
+						<td align="right">1:20:32</td>
+						<td>Mumbai</td>
+					</tr>
+					<tr>
+						<td rowspan="2" bgcolor="green">Women</td>
+						<td>1. Sita</td>
+						<td align="right">5:12:32</td>
+						<td>Noida</td>
+					</tr>
+					<tr>
+						<td>2. Gita</td>
+						<td align="right">6:45:00</td>
+						<td>Ghaziabad</td>
+					</tr>
+				</table>
+</body>
+</html>

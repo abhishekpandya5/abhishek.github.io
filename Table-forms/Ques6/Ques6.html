@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="style6.css">
+</head>
+<body>
+		<div id="form-container">
+			<div id="form-box">
+				<p id="heading">Register</p>
+				<p class="element-color">Create your account. It's free and only takes a minute</p>
+				<form action="somepage.php" method="post">
+					<div class="form-spacing">
+					
+						<input type="text" placeholder="First Name" class="first-input" name="firstname" required>
+						<input type="text" placeholder="Last Name" class="first-input" name="lastname" required>
+						
+						
+						<input type="email" placeholder="Email" class="rest-input" name="email" required>
+						
+						
+						<input type="password" placeholder="Password" class="rest-input" name="confirm-password" required>
+						
+						
+						<input type="password" placeholder="Confirm Password" class="rest-input" name="confirm-password" required>
+						
+						
+						<input type="checkbox" name="checkbox" required><span class="element-color">I accept the Terms of Use and Privacy Policy</span>
+						
+						
+						<input type="submit" name="submit-btn" class="rest-input" id="submit-btn" value="Register Now">
+					
+					</div>
+				</form>
+			</div>
+			<p id="signup">Already have an account?<a href="">Sign in</a></p>
+		</div>
+</body>
+</html>
