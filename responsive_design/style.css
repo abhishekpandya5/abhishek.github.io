@@ -1,0 +1,411 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin:0;
+}
+
+.overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #000;   /*#474756*/
+	opacity: 0.4;
+}
+
+.wrapper{
+	width: 90%;
+	margin: auto;
+	position: relative;
+}
+
+.banner{
+	background-image: url("assets/banner.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+header{
+	border-bottom: 2px solid #FFF;
+	position: relative;
+}	
+
+nav a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+nav a:hover{
+	text-decoration: underline;
+}
+
+nav a:not(:first-child){
+	float: right;
+	display: inline-block;
+	padding-left: 30px;
+}
+
+nav{
+	padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.color_theme{
+	color: #FFF;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.banner_text{
+	text-align: center;
+	padding-top: 45px;
+	padding-bottom: 77px;
+}
+
+h1{
+	font-size: 46px;
+}
+
+.banner_text ul{
+	list-style: none;
+	padding: 40px;
+}
+
+.banner_text ul li{
+	display: inline-block;
+	padding-right: 40px;
+    padding-left: 40px;
+	border-right: 1px solid #FFF;
+}
+
+.banner_text ul li:last-child{
+	border-right: none;
+}
+
+.banner_text ul li i{
+	color: #6CC090;
+}
+
+.banner_text ul li i:hover{
+	color: #7CFC00;
+}
+
+.heading{
+	font-weight: bold;
+	font-size: 19px;
+	cursor: pointer;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.heading:hover{
+	text-decoration: underline #fff;
+}
+
+.description{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.btn{
+	height: 38px;
+	background-color: transparent;
+	border-radius: 20px;
+	border: 3px solid;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 10px;
+}
+
+.btn_theme{
+	width: 150px;
+	color: #6CC090;
+	border-color: #6CC090;
+}
+
+.btn_theme:hover{
+	background-color: #6CC090;
+	color: #fff;
+}
+
+.card_container{
+	text-align: center;
+}
+
+.card{
+	width: 35%;
+	height: 400px;
+	/*border:2px solid;*/
+	display: inline-block;
+	text-align: center;
+	font-family: sans-serif;
+	padding: 20px 30px;
+}
+.card img{
+	border-radius: 76px;
+}
+
+.card_heading{
+	font-weight: bold;
+	font-size: 22px;
+	color: #555555;
+	padding: 15px;
+}
+
+.card_description{
+	color: #9A9A9A;
+	font-size: 15px;
+	padding: 15px;
+}
+
+h2{
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 27px;
+}
+footer{
+	background:#6CC090;
+	position: relative;
+	height: 499px;
+}
+form{
+	width:85%;
+	margin:0 auto;
+}
+.txt_inpt{
+	display: inline-block;
+	width:50%;	
+	margin-bottom: 30px;
+}
+label{
+	font-size: 15px;
+}
+
+label[for="email"]{
+	margin-left: 26px;
+}
+
+input{
+	display: block;
+	width:95%;
+	background:#6CC090;
+	padding: 12px;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+input[type="text"]{
+	float: left;
+}
+
+input[type="email"]{
+	float: right;
+}
+
+textarea{
+	width:100%;
+	padding: 12px;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+input::placeholder,textarea::placeholder{
+	color: #fff;
+}
+
+input:focus,textarea:focus{
+	border:2px solid #fff;
+	outline: none;
+}
+
+.footer_btn_theme{
+	width: 180px;
+	color: #fff;
+	border-color: #fff;
+	margin:36px auto;
+}
+
+form::after{
+	content: "\00a9 Untitled.Design:TEMPLATED.Images:Unsplash.";
+	color:#fff;
+	display: block;
+	text-align: center;
+	font-size: 15px;
+}
+
+form{
+	font-size: 0;
+}
+
+/*Dropdown menu for small devices*/
+
+.dropdown{
+	position: absolute;
+	right: 0;
+	top: 31px;
+	display: none;
+}
+
+.dropdown_content a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	background-color: #000;
+	opacity: .8;
+	padding: 12px 16px;
+}
+
+.dropdown_content{
+	right: 8px;
+    width: 110px;
+    position: absolute;
+    top: 28px;
+    display: none;
+}
+
+.dropbtn{
+	position: absolute;
+	right: 0;
+	background-color: transparent;
+    border: none;
+}
+
+.dropbtn img{
+    height: 32px;
+    width: 32px;
+}
+.dropbtn:focus{
+	outline: none;
+}
+.dropdown_content a:hover{
+	background-color: grey;
+	color: #000;
+	font-weight: bold;
+}
+
+.dropdown:hover .dropdown_content{
+	display: block;
+}
+
+
+/*media queries for small devices*/
+
+@media (max-width: 480px) {
+
+	h1 {
+	    font-size: 30px;
+	}
+
+	.card{
+			width: 100%;
+			padding-top: 59px;
+	}
+
+	.banner_text ul {
+	    padding: 0px;
+	}
+
+	.banner_text ul li {
+	   display: block;
+	   margin-bottom: 40px;
+	   border-right: none;
+	}
+
+	.txt_inpt {
+	    display: block;
+	    width: 100%; 
+	}
+
+	label[for="email"] {
+	    margin-left: 0px;
+	}
+
+	input{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	footer{
+		height: 590px;
+		margin-top: 59px;
+	}
+
+	.banner_text {
+	    padding-top: 24px;
+	    padding-bottom: 44px;
+	}
+
+	.banner{
+		background-size: initial;
+	}
+
+	nav a:not(:first-child){
+		display: none;
+	}
+
+	.dropdown{
+		display: initial;
+	}
+
+	header{
+		padding-top: 7px;
+	}
+
+	nav {
+		display: inline-block;
+	}
+
+}
+
+/*media queries for medium devices*/
+
+@media (max-width: 768px) {
+
+	.banner_text ul li{
+		padding-right: 8px;
+	    padding-left: 8px;
+	}
+
+	.card {
+	    width: 77%;
+	    padding-top: 33px;
+	}
+
+	.txt_inpt {
+	    width: 100%;
+	}
+
+	label[for="email"] {
+	    margin-left: 0;
+	}
+
+	input {
+	    width: 100%;
+	}
+
+	footer{
+		height: 610px;
+	}
+
+	nav a:not(:first-child){
+		display: none;
+	}
+
+	.dropdown{
+		display: initial;
+	}
+
+} 
