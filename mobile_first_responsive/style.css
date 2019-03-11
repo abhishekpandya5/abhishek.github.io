@@ -97,6 +97,24 @@ header a{
 	display: block;
 }
 
+/*nav bar for desktop view*/
+
+
+nav a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+nav a:hover{
+	text-decoration: underline;
+}
+
+nav{
+		display: none;
+	}
+/*-------------------------*/
+
 .banner_text{
 	text-align: center;
 	padding-top: 27px;
@@ -149,6 +167,7 @@ h1{
 
 .card_container{
 	text-align: center;
+	padding-bottom: 14px;
 }
 
 .card{
@@ -158,7 +177,7 @@ h1{
 	display: inline-block;
 	text-align: center;
 	font-family: sans-serif;
-	padding: 20px 30px;
+	padding: 84px 30px;
 }
 .card img{
 	border-radius: 76px;
@@ -182,7 +201,7 @@ h1{
 footer{
 	background:#6CC090;
 	position: relative;
-	height: 525px;
+	height: 567px;
 }
 
 h2{
@@ -214,6 +233,10 @@ textarea{
 	border-radius: 7px;
 	background-color: transparent;
 	border: 1px solid #fff;
+	margin-top: 10px;
+	font-weight: bold;
+    font-size: 15px;
+    padding: 12px;
 }
 
 input::placeholder,textarea::placeholder{
@@ -231,3 +254,126 @@ input:focus,textarea:focus{
 	border-color: #fff;
 	margin:36px auto;
 }
+
+/*media query for medium size devies*/
+
+@media (min-width: 480px){	
+
+	h1{
+		padding-top: 18px;
+    	padding-bottom: 18px;
+	}
+
+	.banner{
+		height: 472px;
+	}
+
+	.banner_text ul li {
+	    display: inline-block;
+		border-right: 1px solid #FFF;
+		width: 30%; 
+		padding-bottom: 0px;
+		padding-left: 10px;
+    	padding-right: 10px;	
+	}
+
+	.banner_text ul{
+		padding-bottom: 40px;
+	}
+
+	.banner_text ul li:last-child{
+		border-right: none;
+	}
+
+	.card_container{
+		padding-bottom: 14px;
+	}
+
+	.card{
+		width: 80%;
+	}
+}
+
+/*media query for Desktop devices*/
+
+@media (min-width: 768px){
+
+	header{
+		padding-top: 35px;
+	    padding-bottom: 35px;
+	}
+
+	.dropdown{
+		display: none;
+	}
+	nav{
+		display: block;
+	}
+
+	nav{
+		float: right;
+	}
+
+	nav a{
+		padding-left: 24px;
+	}
+
+	h1 {
+    	font-size: 46px;
+    	padding-top: 22px;
+    	padding-bottom: 22px;
+	}
+
+	.banner_text ul{
+		padding-top: 10px;
+		padding-bottom: 50px;
+	}
+
+	.banner_text ul li {
+	    display: inline-block;
+	    padding-right: 40px;
+    	padding-left: 40px;
+		border-right: 1px solid #FFF;
+		padding-bottom: 0;
+	}
+
+	.banner_text ul li:last-child{
+		border-right: none;
+	}
+
+	.heading{
+		cursor: pointer;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+
+	.heading:hover{
+		text-decoration: underline #fff;
+	}
+
+	.banner{
+		height: 550px;
+	}
+
+	.card_container{
+		padding-bottom: 14px;
+	}
+
+	.card{
+		width: 35%;
+	}
+
+	.txt_inpt{
+		display: inline-block;
+		width:49%;	
+	}
+
+	input{
+		width: 95%;
+	}
+
+	textarea {
+    	width: 96%;
+	}
+}
+
