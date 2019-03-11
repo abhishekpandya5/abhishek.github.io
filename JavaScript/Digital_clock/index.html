@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clock using javaScript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+
+		var month_arr = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+		function clock(){
+			var obj = new Date();
+			var hours = obj.getHours();
+			var minutes = obj.getMinutes();
+			var sec = obj.getSeconds();
+			var date = obj.getDate();
+			var month = obj.getMonth();
+			var year = obj.getFullYear();
+
+			minutes = checkTime(minutes);
+			sec = checkTime(sec);
+
+			if(hours >= 0 && hours<12){
+				ampm="AM";
+			}
+			else{
+				ampm="PM";
+			}
+
+			if(hours>=4 && hours<12)
+				str = "Good Morning";
+			else
+				if(hours>=12 && hours<17)
+					str = "Good Afternoon";
+			else
+				str = "Good Evening";
+
+
+			if(hours>12)
+				hours = hours - 12;
+
+			
+			document.getElementById('message').innerHTML = str;
+			document.getElementById('time').innerHTML = hours +":"+ minutes +":"+ sec +" "+ampm;
+			document.getElementById('current_date').innerHTML = date +" "+ month_arr[month]+" "+year;
+
+			var t = setTimeout(clock, 500);
+		}
+
+		function checkTime(i){
+			if(i<10){
+				i="0"+i;
+			}
+			return i;
+		}
+
+	</script>
+</head>
+<body onload="clock()">
+
+	<div id="message"></div>
+	<div id="time"></div>
+	<div id="current_date"></div>
+
+</body>
+</html>

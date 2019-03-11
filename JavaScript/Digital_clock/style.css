@@ -1,0 +1,33 @@
+body{
+	background-color: blue;
+}
+
+div{
+	color: #fff;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+#message{
+	font-size: 65px;
+	margin-top: 123px;
+}
+
+#message:after{
+	content: "";
+    width: 5%;
+    height: 10px;
+    margin: 29px auto;
+    background-color: #fff;
+    display: block;
+}
+
+#time{
+	font-size: 100px;
+ 	font-weight: bold;
+}
+
+#current_date{
+	font-size: 42px;
+	padding-top: 38px;
+}
