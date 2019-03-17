@@ -1,0 +1,177 @@
+body{
+	margin: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.wrapper{
+	width: 95%;
+	margin: auto;
+	position: relative;
+}
+
+.contact{
+	position: absolute;
+	right: 0;
+	top: 33px;
+	color: #69696b;
+}
+
+.contact span{
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.contact a{
+	text-decoration: none;
+	padding-right: 5px;
+	padding-left: 5px;
+	color: #69696b;
+	   /*#69696b*/
+}
+
+.contact a:hover{
+	text-decoration: underline; 
+}
+
+#divider:after{
+	content: "|";
+	padding-left: 12px;
+}
+
+.banner{
+	position: relative;
+	background-image: url("asset/background-img.jpg");
+/*	width: 100%;*/
+	height: 667px;
+	background-size: cover;
+}
+
+.heading{
+	position: absolute;
+	color: #fff;
+	text-align: center;
+}
+
+.heading1{
+	font-size: 43px;
+	width: 560px;
+	top: 75px;
+}
+
+.heading2{
+	font-size: 32px;
+    width: 580px;
+    top: 166px;
+}
+
+.user_form{
+	position: absolute;
+	right: 0;
+	top: 30px;
+	width: 378px;
+	height: 372px;
+	background-color: #ece8ea;
+	opacity: 0.6;
+	text-align: center;
+}
+
+.form_heading{
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	margin-bottom: 0;
+}
+
+.form_sub_heading{
+	color: #e87824;
+	margin-top: 0;
+}
+
+input{
+	width: 89%;
+	padding: 15px;
+	margin-bottom: 15px;
+	border:none;
+	border-bottom: 1px solid #69696b;
+	background-color: transparent;
+}
+
+input[type="submit"]{
+	width: 210px;
+	height: 48px;
+	background-color: green;
+	color: #fff;
+	margin-top: 14px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+
+input::placeholder{
+	color: #69696b;
+	font-weight: bold;
+}
+
+input:focus{
+	outline: none;
+    border: 2px solid #fff;
+}
+
+.card_container{
+	background-color: #fff;
+	color: #69696b;
+	width: 100%;
+	position: absolute;
+	top: 439px;
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+
+.card_container .card{
+	text-align: center;
+	width: 24%;
+	/*height: 101px;*/
+	padding: 32px 8px;
+	display: inline-block;
+	/*margin-left: -4px;
+	margin-top: -52px;*/
+}
+
+.highlight_text{
+	font-weight: bolder;
+}
+
+small{
+	font-size: 15px;
+}
+
+@media (max-width: 480px){
+
+	.container{
+		width: 600px;
+	}
+	
+	header img{
+		margin: auto;
+    	display: block;
+	}
+
+	.contact{
+		position: static;
+		margin-top: 12px;
+		text-align: center;
+	}
+
+	.banner{
+		width: 588px;
+	}
+
+	.user-form{
+		left: 94px;
+    	top: 290px;
+	}
+
+}
