@@ -1,0 +1,1 @@
+let rectArea = (l, b) => l * b;

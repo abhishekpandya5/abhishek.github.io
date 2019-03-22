@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<style type="text/css">
+		div{
+			font-size: 18px;
+			font-weight: bold;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		Area of Circle: <span id="circle"></span>
+	</div>
+	 <br/>
+	<div>
+		Area of Rectangle: <span id="rectangle"></span>
+	</div>
+	 <br/>
+	<div>
+		Area of Cylinder: <span id="cylinder"></span>
+	 </div>
+	 <br/>
+	 <div>
+		Unique elements from array [1,2,1,3,4,5,5] : <span id="unique"></span>
+	 </div>
+	
+	<script type="text/javascript" src="circle.js"></script>
+	<script type="text/javascript" src="rectangle.js"></script>
+	<script type="text/javascript" src="cylinder.js"></script>
+	<script type="text/javascript" src="unique.js"></script>
+<script type="text/javascript" src="cylinder.js"></script>
+	<script>
+		document.getElementById("circle").innerHTML = circleArea(2);
+		document.getElementById("rectangle").innerHTML = rectArea(3,5);
+		document.getElementById("cylinder").innerHTML = cylinderArea(5,10);	
+		document.getElementById("unique").innerHTML = filter([1,2,1,3,4,5,5]);
+	</script>
+</body>
+</html>
